@@ -11,5 +11,10 @@
 			<artifactId>selenium-java</artifactId>
 			<version>4.26.0</version>
 		</dependency>
+		<dependency>
+			<groupId>Obqura_Maven</groupId>
+			<artifactId>Maven_Project_Selenium</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>

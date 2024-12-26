@@ -5,18 +5,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class TextExample {
+public class ReturnAttribute {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\mathew\\Documents\\Obsqura\\Driver File\\chromedriver.exe");//set the file path of chrome driver/ communicate with which driver
 		WebDriver driver= new ChromeDriver();
-		driver.navigate().to("https://selenium.qabible.in/check-box-demo.php");
-		driver.manage().window().maximize();
-		WebElement submitBtn=driver.findElement(By.xpath("//div[contains(text(),'Single')]"));
+		driver.navigate().to("https://selenium.qabible.in/simple-form-demo.php");
+		WebElement ShowSelectedBtn=driver.findElement(By.xpath("//button[@id='button-one']"));
+		//return a attribute value
+		String BtnAttribute1=ShowSelectedBtn.getAttribute("value");
+		String BtnAttribute=ShowSelectedBtn.getAttribute("id");
+		System.out.println(BtnAttribute);
 		
-		String button= submitBtn.getText();
-		System.out.println(button);
-
+		
 	}
 
 }
