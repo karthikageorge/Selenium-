@@ -16,7 +16,7 @@ public class KeyboardExample {
 		WebElement search=driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
 		//search.sendKeys("phone"+Keys.ENTER);
 		search.sendKeys("phone"+Keys.BACK_SPACE);
-		//2 keys ogether
+		//2 keys together
 		search.sendKeys(Keys.chord(Keys.CONTROL,"A"));//
 	
 		

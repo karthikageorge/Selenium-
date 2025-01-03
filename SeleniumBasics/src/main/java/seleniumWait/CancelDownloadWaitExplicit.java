@@ -9,13 +9,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CancelDownloadWait {
+public class CancelDownloadWaitExplicit {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\mathew\\Documents\\Obsqura\\Driver File\\chromedriver.exe");//set the file path of chrome driver/ communicate with which driver
 		WebDriver driver= new ChromeDriver();
 		driver.navigate().to("https://selenium.qabible.in/jquery-progress-bar.php");
 		driver.manage().window().maximize();
+		
 		//declare obj of class WebDriverWait
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(60));
 		WebElement startBtn=driver.findElement(By.xpath("//button[@id='downloadButton']"));

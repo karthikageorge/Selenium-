@@ -14,7 +14,7 @@ public class FrameExample {
 		driver.manage().window().maximize();
 		driver.switchTo().frame("a077aa5e");//id
 		//driver.switchTo().frame(1);//index
-WebElement image=driver.findElement(By.xpath("//img[@src='Jmeter720.png']"));
+WebElement image=driver.findElement(By.xpath("//img[@src='Jmeter720.png']"));//pass by parameter
 System.out.println(image.isDisplayed());
 driver.switchTo().defaultContent();
 

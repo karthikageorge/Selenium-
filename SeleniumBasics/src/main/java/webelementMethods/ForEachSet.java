@@ -21,7 +21,7 @@ public class ForEachSet {
 		String ParentWindow=driver.getWindowHandle();//current window tab id
 		System.out.println(ParentWindow);
 		
-		/*Set<String> windowHandles=driver.getWindowHandles();
+		Set<String> windowHandles=driver.getWindowHandles();
 		System.out.println(windowHandles.size());//no of open tab
 		for(String window :windowHandles)
 			if(!ParentWindow.equals(window)) {
@@ -31,7 +31,7 @@ public class ForEachSet {
 		WebElement newTab=driver.findElement(By.xpath("//h1[@class='display-3']"));
 		System.out.println(newTab.getText());
 		driver.close();
-		driver.switchTo().window(ParentWindow);//switch to parent window*/
+		driver.switchTo().window(ParentWindow);//switch to parent window
 	}
 	//iterate window--switch--titile if condo--loop break//swith tab title
 

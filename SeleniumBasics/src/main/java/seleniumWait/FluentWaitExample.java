@@ -21,7 +21,10 @@ String state="Hawaii";
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\mathew\\Documents\\Obsqura\\Driver File\\chromedriver.exe");//set the file path of chrome driver/ communicate with which driver
 		WebDriver driver= new ChromeDriver();
 		//Wait<WebDriver> wait = new FluentWait<>(driver) .withTimeout(Duration.ofSeconds(2)) .pollingEvery(Duration.ofMillis(300)) .ignoring(ElementNotInteractableException.
-		Wait<WebDriver> wait = new FluentWait<>(driver) .withTimeout(Duration.ofSeconds(2)) .pollingEvery(Duration.ofMillis(300)) .ignoring(TimeoutException.class);
+		Wait<WebDriver> wait = new FluentWait<>(driver) .
+				withTimeout(Duration.ofSeconds(60)) .
+				pollingEvery(Duration.ofSeconds(2)) .
+				ignoring(TimeoutException.class);
 		driver.navigate().to("https://the-internet.herokuapp.com/dynamic_loading/2");
 		
 		WebElement startBtn=driver.findElement(By.xpath("//button[text()='Start']"));
